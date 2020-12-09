@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IdentityExample.Controllers
 {
-    public class AdministrationController : Controller
+    public class MehmetController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AdministrationController(RoleManager<IdentityRole> roleManager)
+        public MehmetController(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
         }
@@ -15,7 +15,7 @@ namespace IdentityExample.Controllers
         {
             return View();
         }
-        public IActionResult CreateRole()
+        public IActionResult Olustur()
         {
             return View();
         }
